@@ -3,23 +3,23 @@ agent any
 tools{nodejs "MyNode"}
 stages{
 	stage("check Node Version"){
-		steps{
+		steps {
 			sh "node --version"
 		}
 	}
 	stage("install dependencies"){
-		steps{
-			sh "nmp --Version"
+		steps {
+			sh "npm --Version"
 			sh "npm install"
 			}
 	}
 	stage("Test"){
-		steps{
+		steps {
 			sh "node app.js"
 		}
 	}
 	stage("Release the version"){
-			steps{
+			steps {
 				echo "Release the Version"
 			}
 		}
