@@ -9,7 +9,7 @@ stages{
 	}
 	stage("install dependencies"){
 		steps {
-			sh "npm --Version"
+			sh "npm --version"
 			sh "npm install"
 			}
 	}
